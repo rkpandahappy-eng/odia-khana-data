@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "featured.schema.json",
+  "title": "data/featured.json – what Home highlights",
+  "type": "object",
+  "properties": {
+    "featured_recipe_id": { "type": ["string", "null"] },
+    "todays_special_id": { "type": ["string", "null"] },
+    "popular_recipe_ids": { "type": "array", "items": { "type": "string" } }
+  }
+}

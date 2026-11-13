@@ -1,0 +1,68 @@
+[
+  {
+    "id": "traditional",
+    "name": { "or": "ପାରମ୍ପରିକ ଖାଦ୍ୟ", "en": "Traditional" },
+    "description": { "or": "ପିଢ଼ି ପରେ ପିଢ଼ି ଚାଲି ଆସୁଥିବା ଓଡ଼ିଆ ରୋଷେଇ।", "en": "Odia home cooking passed down the generations." },
+    "image": null, "icon": "traditional", "display_order": 1, "is_active": true
+  },
+  {
+    "id": "veg",
+    "name": { "or": "ଶାକାହାରୀ", "en": "Vegetarian" },
+    "description": { "or": "ପନିପରିବା ଓ ଡାଲିର ସୁସ୍ୱାଦୁ ବ୍ୟଞ୍ଜନ।", "en": "Vegetable and lentil dishes." },
+    "image": null, "icon": "veg", "display_order": 2, "is_active": true
+  },
+  {
+    "id": "non_veg",
+    "name": { "or": "ଆମିଷ", "en": "Non-Vegetarian" },
+    "description": { "or": "ମାଛ, ମାଂସ ଓ ଅଣ୍ଡାର ବ୍ୟଞ୍ଜନ।", "en": "Fish, meat and egg dishes." },
+    "image": null, "icon": "non_veg", "display_order": 3, "is_active": true
+  },
+  {
+    "id": "pitha",
+    "name": { "or": "ପିଠା ଓ ମିଠା", "en": "Pitha & Sweets" },
+    "description": { "or": "ଓଡ଼ିଶାର ପାରମ୍ପରିକ ପିଠା ଓ ମିଠେଇ।", "en": "Traditional Odia pithas and sweets." },
+    "image": null, "icon": "pitha", "display_order": 4, "is_active": true
+  },
+  {
+    "id": "breakfast",
+    "name": { "or": "ଜଳଖିଆ", "en": "Breakfast" },
+    "description": { "or": "ସକାଳର ହାଲୁକା ଜଳଖିଆ।", "en": "Light morning meals." },
+    "image": null, "icon": "breakfast", "display_order": 5, "is_active": true
+  },
+  {
+    "id": "snacks",
+    "name": { "or": "ଜଳଖିଆ ଓ ସ୍ନାକ୍ସ", "en": "Snacks" },
+    "description": { "or": "ସନ୍ଧ୍ୟାର ଚା ସହ ଖାଇବା ପାଇଁ।", "en": "Tea-time bites." },
+    "image": null, "icon": "snacks", "display_order": 6, "is_active": true
+  },
+  {
+    "id": "street_food",
+    "name": { "or": "ଷ୍ଟ୍ରିଟ୍ ଫୁଡ୍", "en": "Street Food" },
+    "description": { "or": "ଓଡ଼ିଶାର ବଜାରର ପ୍ରିୟ ସ୍ୱାଦ।", "en": "Favourite flavours from Odisha's streets." },
+    "image": null, "icon": "street_food", "display_order": 7, "is_active": true
+  },
+  {
+    "id": "dal",
+    "name": { "or": "ଡାଲି ଓ ତରକାରୀ", "en": "Dal & Curry" },
+    "description": { "or": "ପ୍ରତିଦିନର ଡାଲି ଓ ତରକାରୀ।", "en": "Everyday dals and curries." },
+    "image": null, "icon": "dal", "display_order": 8, "is_active": true
+  },
+  {
+    "id": "festival",
+    "name": { "or": "ପର୍ବପର୍ବାଣୀ", "en": "Festival Special" },
+    "description": { "or": "ପର୍ବ ଓ ଉତ୍ସବର ବିଶେଷ ଖାଦ୍ୟ।", "en": "Dishes made for festivals." },
+    "image": null, "icon": "festival", "display_order": 9, "is_active": true
+  },
+  {
+    "id": "chutney",
+    "name": { "or": "ଚଟଣି", "en": "Chutney" },
+    "description": { "or": "ଖଟା, ମିଠା ଓ ରାଗ ଚଟଣି।", "en": "Tangy, sweet and spicy chutneys." },
+    "image": null, "icon": "chutney", "display_order": 10, "is_active": true
+  },
+  {
+    "id": "drinks",
+    "name": { "or": "ପାନୀୟ", "en": "Beverages" },
+    "description": { "or": "ଥଣ୍ଡା ଓ ଗରମ ପାନୀୟ।", "en": "Cool and warm drinks." },
+    "image": null, "icon": "drinks", "display_order": 11, "is_active": true
+  }
+]

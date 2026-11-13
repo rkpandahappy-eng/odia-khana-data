@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "categories.schema.json",
+  "title": "data/categories.json – recipe categories",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "name", "description", "display_order"],
+    "properties": {
+      "id": { "type": "string", "pattern": "^[a-z0-9_]+$" },
+      "name": { "$ref": "localized_text.schema.json" },
+      "description": { "$ref": "localized_text.schema.json" },
+      "image": { "type": ["string", "null"] },
+      "icon": { "type": ["string", "null"] },
+      "display_order": { "type": "integer" },
+      "is_active": { "type": "boolean" }
+    }
+  }
+}

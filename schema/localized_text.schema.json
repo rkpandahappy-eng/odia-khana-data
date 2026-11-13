@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "localized_text.schema.json",
+  "title": "Text in Odia and English",
+  "type": "object",
+  "required": ["or", "en"],
+  "additionalProperties": false,
+  "properties": {
+    "or": { "type": "string", "description": "Odia text" },
+    "en": { "type": "string", "description": "English text" }
+  },
+  "anyOf": [
+    { "properties": { "or": { "minLength": 1, "pattern": "\\S" } } },
+    { "properties": { "en": { "minLength": 1, "pattern": "\\S" } } }
+  ]
+}

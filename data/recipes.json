@@ -1,0 +1,417 @@
+[
+  {
+    "id": "odia_dalma_001",
+    "slug": "dalma",
+    "name": { "or": "ଡାଲମା", "en": "Dalma" },
+    "description": {
+      "or": "ହରଡ଼ ଡାଲି ଓ ପନିପରିବା ମିଶାଇ ତିଆରି ଓଡ଼ିଶାର ପ୍ରସିଦ୍ଧ ପାରମ୍ପରିକ ଖାଦ୍ୟ।",
+      "en": "Odisha's best-known everyday dish of arhar dal cooked with vegetables."
+    },
+    "category_id": "traditional",
+    "food_type": "vegetarian",
+    "prep_time_minutes": 15,
+    "cook_time_minutes": 30,
+    "difficulty": "easy",
+    "default_servings": 4,
+    "cuisine": { "or": "ଓଡ଼ିଆ", "en": "Odia" },
+    "ingredients": [
+      { "id": "dal", "name": { "or": "ହରଡ଼ ଡାଲି", "en": "Arhar dal" }, "quantity": 1, "unit": "cup", "scalable": true },
+      { "id": "pumpkin", "name": { "or": "କଖାରୁ", "en": "Pumpkin, cubed" }, "quantity": 100, "unit": "g", "scalable": true },
+      { "id": "papaya", "name": { "or": "ଅମୃତଭଣ୍ଡା", "en": "Raw papaya, cubed" }, "quantity": 100, "unit": "g", "scalable": true },
+      { "id": "brinjal", "name": { "or": "ବାଇଗଣ", "en": "Brinjal" }, "quantity": 1, "unit": "piece", "scalable": true },
+      { "id": "potato", "name": { "or": "ଆଳୁ", "en": "Potato" }, "quantity": 1, "unit": "piece", "scalable": true },
+      { "id": "turmeric", "name": { "or": "ହଳଦୀ ଗୁଣ୍ଡ", "en": "Turmeric powder" }, "quantity": 0.5, "unit": "tsp", "scalable": true },
+      { "id": "ginger", "name": { "or": "ଅଦା ବଟା", "en": "Ginger paste" }, "quantity": 1, "unit": "tsp", "scalable": true },
+      { "id": "ghee", "name": { "or": "ଘିଅ", "en": "Ghee" }, "quantity": 1, "unit": "tbsp", "scalable": true },
+      { "id": "panch_phutana", "name": { "or": "ପାଞ୍ଚଫୁଟଣ", "en": "Panch phutana" }, "quantity": 1, "unit": "tsp", "scalable": true },
+      { "id": "red_chilli", "name": { "or": "ଶୁଖିଲା ଲଙ୍କା", "en": "Dry red chilli" }, "quantity": 2, "unit": "piece", "scalable": true },
+      { "id": "bay_leaf", "name": { "or": "ତେଜପତ୍ର", "en": "Bay leaf" }, "quantity": 1, "unit": "piece", "scalable": false },
+      { "id": "coconut", "name": { "or": "ନଡ଼ିଆ କୋରା", "en": "Grated coconut" }, "quantity": 2, "unit": "tbsp", "scalable": true },
+      { "id": "salt", "name": { "or": "ଲୁଣ", "en": "Salt" }, "quantity": null, "unit": "to_taste", "scalable": false },
+      { "id": "water", "name": { "or": "ପାଣି", "en": "Water" }, "quantity": null, "unit": "as_required", "scalable": false }
+    ],
+    "instructions": [
+      { "step": 1, "text": { "or": "ଡାଲିକୁ ଭଲଭାବେ ଧୋଇ ୧୫ ମିନିଟ୍ ଭିଜାଇ ରଖନ୍ତୁ।", "en": "Wash the dal well and soak it for 15 minutes." }, "image": null, "timer_seconds": 900 },
+      { "step": 2, "text": { "or": "ଡାଲିକୁ ହଳଦୀ, ଲୁଣ ଓ ପାଣି ସହ ପ୍ରେସର କୁକରରେ ଗୋଟିଏ ସିଟି ପର୍ଯ୍ୟନ୍ତ ସିଝାନ୍ତୁ।", "en": "Pressure-cook the dal with turmeric, salt and water for one whistle." }, "image": null, "timer_seconds": null },
+      { "step": 3, "text": { "or": "କଖାରୁ, ଅମୃତଭଣ୍ଡା, ବାଇଗଣ ଓ ଆଳୁ ମିଶାଇ ଆଉ ୨-୩ ସିଟି ସିଝାନ୍ତୁ।", "en": "Add the pumpkin, papaya, brinjal and potato and cook for 2–3 more whistles." }, "image": null, "timer_seconds": null, "tip": { "or": "ପନିପରିବାକୁ ବଡ଼ ଟୁକୁଡ଼ାରେ କାଟନ୍ତୁ, ନହେଲେ ଚକଟି ହୋଇଯିବ।", "en": "Cut the vegetables into large pieces so they don't turn mushy." } },
+      { "step": 4, "text": { "or": "କଡ଼େଇରେ ଘିଅ ଗରମ କରି ପାଞ୍ଚଫୁଟଣ, ଶୁଖିଲା ଲଙ୍କା, ତେଜପତ୍ର ଓ ଅଦା ଦେଇ ଫୁଟାଣ ଦିଅନ୍ତୁ।", "en": "Heat ghee and temper with panch phutana, dry chillies, bay leaf and ginger." }, "image": null, "timer_seconds": null },
+      { "step": 5, "text": { "or": "ଫୁଟାଣକୁ ଡାଲମାରେ ଢାଳି ନଡ଼ିଆ କୋରା ପକାଇ ୨ ମିନିଟ୍ ଫୁଟାନ୍ତୁ।", "en": "Pour the tempering over the dalma, add the coconut and simmer for 2 minutes." }, "image": null, "timer_seconds": 120 }
+    ],
+    "tips": [
+      { "or": "ଶେଷରେ ଭଜା ଜିରା-ଲଙ୍କା ଗୁଣ୍ଡ ପକାଇଲେ ସ୍ୱାଦ ବଢ଼େ।", "en": "A pinch of roasted cumin-chilli powder at the end lifts the flavour." }
+    ],
+    "serving_suggestion": { "or": "ଗରମ ଭାତ ଓ ଭଜା ସହ ପରଷନ୍ତୁ।", "en": "Serve with hot rice and a fry." },
+    "image": null,
+    "tags": ["veg", "dal", "lunch", "healthy"],
+    "is_featured": true,
+    "is_published": true,
+    "is_verified": false,
+    "published_at": "2026-11-01"
+  },
+  {
+    "id": "odia_santula_001",
+    "slug": "santula",
+    "name": { "or": "ସନ୍ତୁଳା", "en": "Santula" },
+    "description": {
+      "or": "କମ୍ ତେଲ ଓ ମସଲାରେ ତିଆରି ହାଲୁକା ମିଶା ପନିପରିବା ତରକାରୀ।",
+      "en": "A light mixed-vegetable dish made with very little oil and spice."
+    },
+    "category_id": "veg",
+    "food_type": "vegetarian",
+    "prep_time_minutes": 15,
+    "cook_time_minutes": 20,
+    "difficulty": "easy",
+    "default_servings": 3,
+    "cuisine": { "or": "ଓଡ଼ିଆ", "en": "Odia" },
+    "ingredients": [
+      { "id": "papaya", "name": { "or": "ଅମୃତଭଣ୍ଡା", "en": "Raw papaya" }, "quantity": 150, "unit": "g", "scalable": true },
+      { "id": "potato", "name": { "or": "ଆଳୁ", "en": "Potato" }, "quantity": 1, "unit": "piece", "scalable": true },
+      { "id": "brinjal", "name": { "or": "ବାଇଗଣ", "en": "Brinjal" }, "quantity": 1, "unit": "piece", "scalable": true },
+      { "id": "beans", "name": { "or": "ବିନ୍ସ", "en": "French beans" }, "quantity": 50, "unit": "g", "scalable": true },
+      { "id": "green_chilli", "name": { "or": "କଞ୍ଚା ଲଙ୍କା", "en": "Green chilli" }, "quantity": 2, "unit": "piece", "scalable": true },
+      { "id": "garlic", "name": { "or": "ରସୁଣ", "en": "Garlic cloves" }, "quantity": 3, "unit": "piece", "scalable": true },
+      { "id": "panch_phutana", "name": { "or": "ପାଞ୍ଚଫୁଟଣ", "en": "Panch phutana" }, "quantity": 0.5, "unit": "tsp", "scalable": true },
+      { "id": "oil", "name": { "or": "ତେଲ", "en": "Oil" }, "quantity": 1, "unit": "tsp", "scalable": true },
+      { "id": "turmeric", "name": { "or": "ହଳଦୀ ଗୁଣ୍ଡ", "en": "Turmeric powder" }, "quantity": 0.25, "unit": "tsp", "scalable": true },
+      { "id": "salt", "name": { "or": "ଲୁଣ", "en": "Salt" }, "quantity": null, "unit": "to_taste", "scalable": false }
+    ],
+    "instructions": [
+      { "step": 1, "text": { "or": "ସବୁ ପନିପରିବାକୁ ମଧ୍ୟମ ଟୁକୁଡ଼ାରେ କାଟନ୍ତୁ।", "en": "Cut all the vegetables into medium pieces." }, "image": null, "timer_seconds": null },
+      { "step": 2, "text": { "or": "ପନିପରିବାକୁ ହଳଦୀ, ଲୁଣ ଓ ଅଳ୍ପ ପାଣି ସହ ନରମ ହେବା ପର୍ଯ୍ୟନ୍ତ ସିଝାନ୍ତୁ।", "en": "Boil the vegetables with turmeric, salt and a little water until soft." }, "image": null, "timer_seconds": 600 },
+      { "step": 3, "text": { "or": "ତେଲ ଗରମ କରି ପାଞ୍ଚଫୁଟଣ, ଛେଚା ରସୁଣ ଓ କଞ୍ଚା ଲଙ୍କା ଦେଇ ଫୁଟାଣ ଦିଅନ୍ତୁ।", "en": "Heat oil and temper with panch phutana, crushed garlic and green chillies." }, "image": null, "timer_seconds": null },
+      { "step": 4, "text": { "or": "ସିଝା ପନିପରିବା ମିଶାଇ ୩-୪ ମିନିଟ୍ ଭଲଭାବେ ଘାଣ୍ଟନ୍ତୁ।", "en": "Add the boiled vegetables and stir for 3–4 minutes." }, "image": null, "timer_seconds": 240 }
+    ],
+    "tips": [
+      { "or": "ଅଳ୍ପ କ୍ଷୀର ମିଶାଇ କ୍ଷୀର ସନ୍ତୁଳା ମଧ୍ୟ ତିଆରି କରାଯାଏ।", "en": "Some homes add a little milk to make kheer santula." }
+    ],
+    "serving_suggestion": { "or": "ଭାତ ଓ ଡାଲି ସହ ପରଷନ୍ତୁ।", "en": "Serve with rice and dal." },
+    "image": null,
+    "tags": ["traditional", "healthy", "lunch"],
+    "is_featured": false,
+    "is_published": true,
+    "is_verified": false,
+    "published_at": "2026-11-02"
+  },
+  {
+    "id": "odia_pakhala_001",
+    "slug": "pakhala",
+    "name": { "or": "ପଖାଳ", "en": "Pakhala" },
+    "description": {
+      "or": "ଖରାଦିନର ଥଣ୍ଡା ପାଣି ଭାତ, ଦହି ଓ ଫୁଟାଣ ସହ।",
+      "en": "Cooling summer water-rice with curd and a light tempering."
+    },
+    "category_id": "traditional",
+    "food_type": "vegetarian",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 5,
+    "difficulty": "easy",
+    "default_servings": 2,
+    "cuisine": { "or": "ଓଡ଼ିଆ", "en": "Odia" },
+    "ingredients": [
+      { "id": "rice", "name": { "or": "ଭାତ (ଥଣ୍ଡା)", "en": "Cooked rice, cooled" }, "quantity": 2, "unit": "cup", "scalable": true },
+      { "id": "water", "name": { "or": "ପାଣି", "en": "Water" }, "quantity": 3, "unit": "cup", "scalable": true },
+      { "id": "curd", "name": { "or": "ଦହି", "en": "Curd" }, "quantity": 0.5, "unit": "cup", "scalable": true },
+      { "id": "oil", "name": { "or": "ତେଲ", "en": "Oil" }, "quantity": 1, "unit": "tsp", "scalable": true },
+      { "id": "mustard", "name": { "or": "ସୋରିଷ", "en": "Mustard seeds" }, "quantity": 0.5, "unit": "tsp", "scalable": true },
+      { "id": "curry_leaves", "name": { "or": "ଭୃସଙ୍ଗ ପତ୍ର", "en": "Curry leaves" }, "quantity": 6, "unit": "piece", "scalable": true },
+      { "id": "red_chilli", "name": { "or": "ଶୁଖିଲା ଲଙ୍କା", "en": "Dry red chilli" }, "quantity": 1, "unit": "piece", "scalable": true },
+      { "id": "salt", "name": { "or": "ଲୁଣ", "en": "Salt" }, "quantity": null, "unit": "to_taste", "scalable": false }
+    ],
+    "instructions": [
+      { "step": 1, "text": { "or": "ଥଣ୍ଡା ଭାତରେ ପାଣି ଓ ଲୁଣ ମିଶାନ୍ତୁ।", "en": "Add water and salt to the cooled rice." }, "image": null, "timer_seconds": null },
+      { "step": 2, "text": { "or": "ଦହିକୁ ଫେଣ୍ଟି ଭାତରେ ମିଶାନ୍ତୁ।", "en": "Whisk the curd and stir it into the rice." }, "image": null, "timer_seconds": null },
+      { "step": 3, "text": { "or": "ତେଲରେ ସୋରିଷ, ଶୁଖିଲା ଲଙ୍କା ଓ ଭୃସଙ୍ଗ ପତ୍ର ଫୁଟାଇ ପଖାଳରେ ଢାଳନ୍ତୁ।", "en": "Splutter mustard seeds, dry chilli and curry leaves in oil and pour over the pakhala." }, "image": null, "timer_seconds": null }
+    ],
+    "tips": [
+      { "or": "ରାତିସାରା ଭିଜାଇ ରଖିଲେ ବାସି ପଖାଳ ହୁଏ, ଯାହାର ସ୍ୱାଦ ଅଲଗା।", "en": "Soaking overnight gives 'basi pakhala', which has its own tangy taste." }
+    ],
+    "serving_suggestion": { "or": "ଆଳୁ ଭର୍ତ୍ତା, ବଡ଼ି ଚୁରା ଓ ଭଜା ସହ ଖାଆନ୍ତୁ।", "en": "Eat with aloo bharta, badi chura and fries." },
+    "image": null,
+    "tags": ["veg", "summer", "lunch"],
+    "is_featured": false,
+    "is_published": true,
+    "is_verified": false,
+    "published_at": "2026-11-03"
+  },
+  {
+    "id": "odia_chhena_poda_001",
+    "slug": "chhena-poda",
+    "name": { "or": "ଛେନାପୋଡ଼", "en": "Chhena Poda" },
+    "description": {
+      "or": "ଛେନା ଓ ଚିନିକୁ ସେକି ତିଆରି ଓଡ଼ିଶାର ପ୍ରସିଦ୍ଧ ମିଠା।",
+      "en": "Odisha's famous baked cheese dessert with a caramelised crust."
+    },
+    "category_id": "pitha",
+    "food_type": "vegetarian",
+    "prep_time_minutes": 20,
+    "cook_time_minutes": 60,
+    "difficulty": "medium",
+    "default_servings": 6,
+    "cuisine": { "or": "ଓଡ଼ିଆ", "en": "Odia" },
+    "ingredients": [
+      { "id": "chhena", "name": { "or": "ଛେନା", "en": "Fresh chhena" }, "quantity": 500, "unit": "g", "scalable": true },
+      { "id": "sugar", "name": { "or": "ଚିନି", "en": "Sugar" }, "quantity": 150, "unit": "g", "scalable": true },
+      { "id": "semolina", "name": { "or": "ସୁଜି", "en": "Semolina" }, "quantity": 2, "unit": "tbsp", "scalable": true },
+      { "id": "cardamom", "name": { "or": "ଅଳେଇଚ ଗୁଣ୍ଡ", "en": "Cardamom powder" }, "quantity": 0.5, "unit": "tsp", "scalable": true },
+      { "id": "ghee", "name": { "or": "ଘିଅ", "en": "Ghee" }, "quantity": 1, "unit": "tbsp", "scalable": true },
+      { "id": "cashew", "name": { "or": "କାଜୁ", "en": "Cashews" }, "quantity": 10, "unit": "piece", "scalable": true },
+      { "id": "raisin", "name": { "or": "କିସମିସ", "en": "Raisins" }, "quantity": 1, "unit": "tbsp", "scalable": true }
+    ],
+    "instructions": [
+      { "step": 1, "text": { "or": "ଛେନାକୁ ୫-୭ ମିନିଟ୍ ହାତରେ ଚକଟି ମସୃଣ କରନ୍ତୁ।", "en": "Knead the chhena by hand for 5–7 minutes until smooth." }, "image": null, "timer_seconds": 420 },
+      { "step": 2, "text": { "or": "ଚିନି, ସୁଜି, ଅଳେଇଚ, କାଜୁ ଓ କିସମିସ ମିଶାନ୍ତୁ।", "en": "Mix in the sugar, semolina, cardamom, cashews and raisins." }, "image": null, "timer_seconds": null },
+      { "step": 3, "text": { "or": "ଘିଅ ବୋଳା ପାତ୍ରରେ ମିଶ୍ରଣ ରଖି ସମାନ କରନ୍ତୁ।", "en": "Spread the mixture evenly in a greased tin." }, "image": null, "timer_seconds": null },
+      { "step": 4, "text": { "or": "୧୮୦°C ଓଭେନରେ ପ୍ରାୟ ୪୫-୬୦ ମିନିଟ୍ ଉପର ଲାଲ ହେବା ପର୍ଯ୍ୟନ୍ତ ସେକନ୍ତୁ।", "en": "Bake at 180°C for about 45–60 minutes until the top is deep brown." }, "image": null, "timer_seconds": 3000 },
+      { "step": 5, "text": { "or": "ଥଣ୍ଡା ହେବା ପରେ କାଟି ପରଷନ୍ତୁ।", "en": "Let it cool, then cut and serve." }, "image": null, "timer_seconds": null }
+    ],
+    "tips": [
+      { "or": "ପାରମ୍ପରିକ ଭାବେ କଦଳୀ ପତ୍ର ବିଛାଇ ଚୁଲିରେ ପୋଡ଼ାଯାଏ।", "en": "Traditionally it is baked on banana leaves over a wood fire." }
+    ],
+    "serving_suggestion": { "or": "ଅଳ୍ପ ଗରମ ବା ଥଣ୍ଡା ପରଷନ୍ତୁ।", "en": "Serve warm or at room temperature." },
+    "image": null,
+    "tags": ["festival", "sweets"],
+    "is_featured": true,
+    "is_published": true,
+    "is_verified": false,
+    "published_at": "2026-11-04"
+  },
+  {
+    "id": "odia_chakuli_pitha_001",
+    "slug": "chakuli-pitha",
+    "name": { "or": "ଚକୁଳି ପିଠା", "en": "Chakuli Pitha" },
+    "description": {
+      "or": "ଚାଉଳ ଓ ବିରି ଡାଲି ବଟାରେ ତିଆରି ପତଳା ନରମ ପିଠା।",
+      "en": "Soft, thin pancakes from a fermented rice and urad dal batter."
+    },
+    "category_id": "pitha",
+    "food_type": "vegetarian",
+    "prep_time_minutes": 20,
+    "cook_time_minutes": 25,
+    "difficulty": "medium",
+    "default_servings": 4,
+    "cuisine": { "or": "ଓଡ଼ିଆ", "en": "Odia" },
+    "ingredients": [
+      { "id": "rice", "name": { "or": "ଅରୁଆ ଚାଉଳ", "en": "Raw rice" }, "quantity": 2, "unit": "cup", "scalable": true },
+      { "id": "urad", "name": { "or": "ବିରି ଡାଲି", "en": "Urad dal" }, "quantity": 1, "unit": "cup", "scalable": true },
+      { "id": "salt", "name": { "or": "ଲୁଣ", "en": "Salt" }, "quantity": null, "unit": "to_taste", "scalable": false },
+      { "id": "oil", "name": { "or": "ତେଲ", "en": "Oil" }, "quantity": null, "unit": "as_required", "scalable": false }
+    ],
+    "instructions": [
+      { "step": 1, "text": { "or": "ଚାଉଳ ଓ ବିରିକୁ ଅଲଗା ଅଲଗା ୬ ଘଣ୍ଟା ଭିଜାନ୍ତୁ।", "en": "Soak the rice and urad dal separately for 6 hours." }, "image": null, "timer_seconds": null },
+      { "step": 2, "text": { "or": "ଦୁହିଁଙ୍କୁ ବାଟି ମିଶାନ୍ତୁ ଓ ରାତିସାରା ଖଟା ହେବାକୁ ଛାଡ଼ନ୍ତୁ।", "en": "Grind both, mix together and leave to ferment overnight." }, "image": null, "timer_seconds": null },
+      { "step": 3, "text": { "or": "ଲୁଣ ମିଶାଇ ବଟାକୁ ପତଳା କରନ୍ତୁ।", "en": "Add salt and thin the batter to a pouring consistency." }, "image": null, "timer_seconds": null },
+      { "step": 4, "text": { "or": "ଗରମ ତାୱାରେ ତେଲ ବୋଳି ବଟା ଢାଳି ଦୁଇ ପଟ ସେକନ୍ତୁ।", "en": "Grease a hot tawa, pour the batter and cook both sides." }, "image": null, "timer_seconds": null }
+    ],
+    "tips": [],
+    "serving_suggestion": { "or": "ଆଳୁ ତରକାରୀ ବା ଗୁଡ଼ ସହ ଖାଆନ୍ତୁ।", "en": "Serve with potato curry or jaggery." },
+    "image": null,
+    "tags": ["breakfast", "traditional", "veg"],
+    "is_featured": false,
+    "is_published": true,
+    "is_verified": false,
+    "published_at": "2026-11-05"
+  },
+  {
+    "id": "odia_macha_besara_001",
+    "slug": "macha-besara",
+    "name": { "or": "ମାଛ ବେସର", "en": "Macha Besara" },
+    "description": {
+      "or": "ସୋରିଷ ବଟାରେ ରନ୍ଧା ଓଡ଼ିଆ ଘରର ପ୍ରିୟ ମାଛ ତରକାରୀ।",
+      "en": "A beloved Odia fish curry cooked in mustard paste."
+    },
+    "category_id": "non_veg",
+    "food_type": "non_vegetarian",
+    "prep_time_minutes": 20,
+    "cook_time_minutes": 25,
+    "difficulty": "medium",
+    "default_servings": 4,
+    "cuisine": { "or": "ଓଡ଼ିଆ", "en": "Odia" },
+    "ingredients": [
+      { "id": "fish", "name": { "or": "ରୋହି ମାଛ", "en": "Rohu fish pieces" }, "quantity": 500, "unit": "g", "scalable": true },
+      { "id": "mustard", "name": { "or": "ସୋରିଷ", "en": "Mustard seeds" }, "quantity": 2, "unit": "tbsp", "scalable": true },
+      { "id": "garlic", "name": { "or": "ରସୁଣ", "en": "Garlic cloves" }, "quantity": 4, "unit": "piece", "scalable": true },
+      { "id": "green_chilli", "name": { "or": "କଞ୍ଚା ଲଙ୍କା", "en": "Green chilli" }, "quantity": 3, "unit": "piece", "scalable": true },
+      { "id": "turmeric", "name": { "or": "ହଳଦୀ ଗୁଣ୍ଡ", "en": "Turmeric powder" }, "quantity": 1, "unit": "tsp", "scalable": true },
+      { "id": "mustard_oil", "name": { "or": "ସୋରିଷ ତେଲ", "en": "Mustard oil" }, "quantity": 4, "unit": "tbsp", "scalable": true },
+      { "id": "panch_phutana", "name": { "or": "ପାଞ୍ଚଫୁଟଣ", "en": "Panch phutana" }, "quantity": 0.5, "unit": "tsp", "scalable": true },
+      { "id": "salt", "name": { "or": "ଲୁଣ", "en": "Salt" }, "quantity": null, "unit": "to_taste", "scalable": false }
+    ],
+    "instructions": [
+      { "step": 1, "text": { "or": "ମାଛରେ ହଳଦୀ ଓ ଲୁଣ ବୋଳି ୧୦ ମିନିଟ୍ ରଖନ୍ତୁ।", "en": "Rub the fish with turmeric and salt and rest for 10 minutes." }, "image": null, "timer_seconds": 600 },
+      { "step": 2, "text": { "or": "ସୋରିଷ, ରସୁଣ ଓ କଞ୍ଚା ଲଙ୍କାକୁ ଅଳ୍ପ ପାଣି ଦେଇ ବାଟନ୍ତୁ।", "en": "Grind the mustard, garlic and green chillies with a little water." }, "image": null, "timer_seconds": null },
+      { "step": 3, "text": { "or": "ସୋରିଷ ତେଲରେ ମାଛକୁ ହାଲୁକା ଭାଜି ଅଲଗା ରଖନ୍ତୁ।", "en": "Lightly fry the fish in mustard oil and set aside." }, "image": null, "timer_seconds": null },
+      { "step": 4, "text": { "or": "ସେହି ତେଲରେ ପାଞ୍ଚଫୁଟଣ ଦେଇ ସୋରିଷ ବଟା ଓ ପାଣି ମିଶାଇ ଫୁଟାନ୍ତୁ।", "en": "Temper panch phutana in the same oil, add the mustard paste and water and bring to a boil." }, "image": null, "timer_seconds": null },
+      { "step": 5, "text": { "or": "ଭଜା ମାଛ ମିଶାଇ ୫-୭ ମିନିଟ୍ ଧିମା ଆଞ୍ଚରେ ରାନ୍ଧନ୍ତୁ।", "en": "Add the fried fish and simmer for 5–7 minutes." }, "image": null, "timer_seconds": 420 }
+    ],
+    "tips": [
+      { "or": "ସୋରିଷ ବଟା ଅଧିକ ସମୟ ଫୁଟାଇଲେ ପିତା ଲାଗିପାରେ।", "en": "Boiling the mustard paste too long can make it bitter." }
+    ],
+    "serving_suggestion": { "or": "ଗରମ ଭାତ ସହ ପରଷନ୍ତୁ।", "en": "Serve with hot rice." },
+    "image": null,
+    "tags": ["traditional", "lunch"],
+    "is_featured": false,
+    "is_published": true,
+    "is_verified": false,
+    "published_at": "2026-11-06"
+  },
+  {
+    "id": "odia_dahi_baigana_001",
+    "slug": "dahi-baigana",
+    "name": { "or": "ଦହି ବାଇଗଣ", "en": "Dahi Baigana" },
+    "description": {
+      "or": "ଭଜା ବାଇଗଣକୁ ଫୁଟାଣ ଦିଆ ଦହିରେ ମିଶାଇ ତିଆରି ଥଣ୍ଡା ବ୍ୟଞ୍ଜନ।",
+      "en": "Fried brinjal folded into tempered curd, served cool."
+    },
+    "category_id": "veg",
+    "food_type": "vegetarian",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 15,
+    "difficulty": "easy",
+    "default_servings": 3,
+    "cuisine": { "or": "ଓଡ଼ିଆ", "en": "Odia" },
+    "ingredients": [
+      { "id": "brinjal", "name": { "or": "ବାଇଗଣ", "en": "Brinjal" }, "quantity": 2, "unit": "piece", "scalable": true },
+      { "id": "curd", "name": { "or": "ଦହି", "en": "Curd" }, "quantity": 1, "unit": "cup", "scalable": true },
+      { "id": "oil", "name": { "or": "ତେଲ", "en": "Oil" }, "quantity": 2, "unit": "tbsp", "scalable": true },
+      { "id": "mustard", "name": { "or": "ସୋରିଷ", "en": "Mustard seeds" }, "quantity": 0.5, "unit": "tsp", "scalable": true },
+      { "id": "curry_leaves", "name": { "or": "ଭୃସଙ୍ଗ ପତ୍ର", "en": "Curry leaves" }, "quantity": 6, "unit": "piece", "scalable": true },
+      { "id": "turmeric", "name": { "or": "ହଳଦୀ ଗୁଣ୍ଡ", "en": "Turmeric powder" }, "quantity": 0.25, "unit": "tsp", "scalable": true },
+      { "id": "sugar", "name": { "or": "ଚିନି", "en": "Sugar" }, "quantity": 1, "unit": "pinch", "scalable": false },
+      { "id": "salt", "name": { "or": "ଲୁଣ", "en": "Salt" }, "quantity": null, "unit": "to_taste", "scalable": false }
+    ],
+    "instructions": [
+      { "step": 1, "text": { "or": "ବାଇଗଣକୁ ଗୋଲ କାଟି ହଳଦୀ ଓ ଲୁଣ ବୋଳନ୍ତୁ।", "en": "Slice the brinjal into rounds and coat with turmeric and salt." }, "image": null, "timer_seconds": null },
+      { "step": 2, "text": { "or": "ତେଲରେ ବାଇଗଣକୁ ଦୁଇ ପଟ ସୁନେଲି ହେବା ପର୍ଯ୍ୟନ୍ତ ଭାଜନ୍ତୁ।", "en": "Fry the brinjal on both sides until golden." }, "image": null, "timer_seconds": null },
+      { "step": 3, "text": { "or": "ଦହିରେ ଲୁଣ ଓ ଚିନି ମିଶାଇ ଫେଣ୍ଟନ୍ତୁ।", "en": "Whisk the curd with salt and sugar." }, "image": null, "timer_seconds": null },
+      { "step": 4, "text": { "or": "ସୋରିଷ ଓ ଭୃସଙ୍ଗ ପତ୍ର ଫୁଟାଇ ଦହିରେ ଢାଳନ୍ତୁ, ତାପରେ ବାଇଗଣ ମିଶାନ୍ତୁ।", "en": "Temper mustard seeds and curry leaves, pour into the curd, then add the brinjal." }, "image": null, "timer_seconds": null }
+    ],
+    "tips": [],
+    "serving_suggestion": { "or": "ପଖାଳ ବା ଭାତ ସହ ପରଷନ୍ତୁ।", "en": "Serve with pakhala or rice." },
+    "image": null,
+    "tags": ["traditional", "summer"],
+    "is_featured": false,
+    "is_published": true,
+    "is_verified": false,
+    "published_at": "2026-11-07"
+  },
+  {
+    "id": "odia_ghugni_001",
+    "slug": "ghugni",
+    "name": { "or": "ଘୁଗୁନି", "en": "Ghugni" },
+    "description": {
+      "or": "ଶୁଖିଲା ମଟରରେ ତିଆରି ମସଲାଦାର ଷ୍ଟ୍ରିଟ୍ ଫୁଡ୍।",
+      "en": "Spiced dried-pea curry, a favourite street snack."
+    },
+    "category_id": "street_food",
+    "food_type": "vegetarian",
+    "prep_time_minutes": 15,
+    "cook_time_minutes": 30,
+    "difficulty": "easy",
+    "default_servings": 4,
+    "cuisine": { "or": "ଓଡ଼ିଆ", "en": "Odia" },
+    "ingredients": [
+      { "id": "peas", "name": { "or": "ଶୁଖିଲା ହଳଦିଆ ମଟର", "en": "Dried yellow peas (soaked)" }, "quantity": 1, "unit": "cup", "scalable": true },
+      { "id": "onion", "name": { "or": "ପିଆଜ", "en": "Onion, chopped" }, "quantity": 1, "unit": "piece", "scalable": true },
+      { "id": "tomato", "name": { "or": "ଟମାଟୋ", "en": "Tomato, chopped" }, "quantity": 1, "unit": "piece", "scalable": true },
+      { "id": "ginger_garlic", "name": { "or": "ଅଦା-ରସୁଣ ବଟା", "en": "Ginger-garlic paste" }, "quantity": 1, "unit": "tsp", "scalable": true },
+      { "id": "garam_masala", "name": { "or": "ଗରମ ମସଲା", "en": "Garam masala" }, "quantity": 0.5, "unit": "tsp", "scalable": true },
+      { "id": "chilli_powder", "name": { "or": "ଲଙ୍କା ଗୁଣ୍ଡ", "en": "Red chilli powder" }, "quantity": 0.5, "unit": "tsp", "scalable": true },
+      { "id": "turmeric", "name": { "or": "ହଳଦୀ ଗୁଣ୍ଡ", "en": "Turmeric powder" }, "quantity": 0.5, "unit": "tsp", "scalable": true },
+      { "id": "oil", "name": { "or": "ତେଲ", "en": "Oil" }, "quantity": 2, "unit": "tbsp", "scalable": true },
+      { "id": "coriander", "name": { "or": "ଧନିଆ ପତ୍ର", "en": "Coriander leaves" }, "quantity": 1, "unit": "handful", "scalable": false },
+      { "id": "salt", "name": { "or": "ଲୁଣ", "en": "Salt" }, "quantity": null, "unit": "to_taste", "scalable": false }
+    ],
+    "instructions": [
+      { "step": 1, "text": { "or": "ଭିଜା ମଟରକୁ ହଳଦୀ ଓ ଲୁଣ ସହ ନରମ ହେବା ପର୍ଯ୍ୟନ୍ତ ସିଝାନ୍ତୁ।", "en": "Pressure-cook the soaked peas with turmeric and salt until soft." }, "image": null, "timer_seconds": null },
+      { "step": 2, "text": { "or": "ତେଲରେ ପିଆଜ ସୁନେଲି ହେବା ପର୍ଯ୍ୟନ୍ତ ଭାଜନ୍ତୁ, ଅଦା-ରସୁଣ ବଟା ମିଶାନ୍ତୁ।", "en": "Fry the onion until golden, then add the ginger-garlic paste." }, "image": null, "timer_seconds": null },
+      { "step": 3, "text": { "or": "ଟମାଟୋ ଓ ଲଙ୍କା ଗୁଣ୍ଡ ମିଶାଇ ତେଲ ଛାଡ଼ିବା ପର୍ଯ୍ୟନ୍ତ କଷନ୍ତୁ।", "en": "Add the tomato and chilli powder and cook until the oil separates." }, "image": null, "timer_seconds": null },
+      { "step": 4, "text": { "or": "ସିଝା ମଟର ଓ ଗରମ ମସଲା ମିଶାଇ ୧୦ ମିନିଟ୍ ଫୁଟାନ୍ତୁ।", "en": "Add the peas and garam masala and simmer for 10 minutes." }, "image": null, "timer_seconds": 600 }
+    ],
+    "tips": [
+      { "or": "ଉପରେ କଞ୍ଚା ପିଆଜ, ଧନିଆ ପତ୍ର ଓ ଲେମ୍ବୁ ରସ ଦିଅନ୍ତୁ।", "en": "Top with raw onion, coriander and a squeeze of lemon." }
+    ],
+    "serving_suggestion": { "or": "ପିଆଜି, ବରା ବା ଚୁଡ଼ା ସହ ଖାଆନ୍ତୁ।", "en": "Eat with piaji, bara or flattened rice." },
+    "image": null,
+    "tags": ["snacks", "veg"],
+    "is_featured": false,
+    "is_published": true,
+    "is_verified": false,
+    "published_at": "2026-11-08"
+  },
+  {
+    "id": "odia_khajuri_khatta_001",
+    "slug": "tomato-khajuri-khatta",
+    "name": { "or": "ଟମାଟୋ ଖଜୁରି ଖଟା", "en": "Tomato Khajuri Khatta" },
+    "description": {
+      "or": "ଟମାଟୋ ଓ ଖଜୁରିର ମିଠା-ଖଟା ଚଟଣି।",
+      "en": "A sweet-and-sour tomato and date chutney."
+    },
+    "category_id": "chutney",
+    "food_type": "vegetarian",
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 15,
+    "difficulty": "easy",
+    "default_servings": 4,
+    "cuisine": { "or": "ଓଡ଼ିଆ", "en": "Odia" },
+    "ingredients": [
+      { "id": "tomato", "name": { "or": "ଟମାଟୋ", "en": "Tomatoes, chopped" }, "quantity": 3, "unit": "piece", "scalable": true },
+      { "id": "dates", "name": { "or": "ଖଜୁରି", "en": "Dates, chopped" }, "quantity": 6, "unit": "piece", "scalable": true },
+      { "id": "jaggery", "name": { "or": "ଗୁଡ଼", "en": "Jaggery" }, "quantity": 2, "unit": "tbsp", "scalable": true },
+      { "id": "panch_phutana", "name": { "or": "ପାଞ୍ଚଫୁଟଣ", "en": "Panch phutana" }, "quantity": 0.5, "unit": "tsp", "scalable": true },
+      { "id": "red_chilli", "name": { "or": "ଶୁଖିଲା ଲଙ୍କା", "en": "Dry red chilli" }, "quantity": 1, "unit": "piece", "scalable": true },
+      { "id": "oil", "name": { "or": "ତେଲ", "en": "Oil" }, "quantity": 1, "unit": "tsp", "scalable": true },
+      { "id": "salt", "name": { "or": "ଲୁଣ", "en": "Salt" }, "quantity": 1, "unit": "pinch", "scalable": false }
+    ],
+    "instructions": [
+      { "step": 1, "text": { "or": "ତେଲରେ ପାଞ୍ଚଫୁଟଣ ଓ ଶୁଖିଲା ଲଙ୍କା ଫୁଟାନ୍ତୁ।", "en": "Splutter panch phutana and dry chilli in oil." }, "image": null, "timer_seconds": null },
+      { "step": 2, "text": { "or": "ଟମାଟୋ ଓ ଲୁଣ ମିଶାଇ ନରମ ହେବା ପର୍ଯ୍ୟନ୍ତ ରାନ୍ଧନ୍ତୁ।", "en": "Add tomatoes and salt and cook until soft." }, "image": null, "timer_seconds": null },
+      { "step": 3, "text": { "or": "ଖଜୁରି ଓ ଗୁଡ଼ ମିଶାଇ ବହଳିଆ ହେବା ପର୍ଯ୍ୟନ୍ତ ଫୁଟାନ୍ତୁ।", "en": "Add the dates and jaggery and simmer until thick." }, "image": null, "timer_seconds": 300 }
+    ],
+    "tips": [],
+    "serving_suggestion": { "or": "ଭୋଜି ଓ ପର୍ବର ଥାଳିରେ ପରଷନ୍ତୁ।", "en": "A classic on feast and festival plates." },
+    "image": null,
+    "tags": ["festival", "veg"],
+    "is_featured": false,
+    "is_published": true,
+    "is_verified": false,
+    "published_at": "2026-11-09"
+  },
+  {
+    "id": "odia_rasabali_001",
+    "slug": "rasabali",
+    "name": { "or": "ରସାବଳି", "en": "Rasabali" },
+    "description": {
+      "or": "ଭଜା ଛେନା ଚକତିକୁ ବହଳିଆ ମିଠା କ୍ଷୀରରେ ବୁଡ଼ାଇ ତିଆରି ମିଠା।",
+      "en": "Fried chhena discs soaked in thickened sweet milk."
+    },
+    "category_id": "pitha",
+    "food_type": "vegetarian",
+    "prep_time_minutes": 25,
+    "cook_time_minutes": 40,
+    "difficulty": "hard",
+    "default_servings": 6,
+    "cuisine": { "or": "ଓଡ଼ିଆ", "en": "Odia" },
+    "ingredients": [
+      { "id": "chhena", "name": { "or": "ଛେନା", "en": "Fresh chhena" }, "quantity": 250, "unit": "g", "scalable": true },
+      { "id": "semolina", "name": { "or": "ସୁଜି", "en": "Semolina" }, "quantity": 1, "unit": "tbsp", "scalable": true },
+      { "id": "milk", "name": { "or": "କ୍ଷୀର", "en": "Full-fat milk" }, "quantity": 1, "unit": "litre", "scalable": true },
+      { "id": "sugar", "name": { "or": "ଚିନି", "en": "Sugar" }, "quantity": 100, "unit": "g", "scalable": true },
+      { "id": "cardamom", "name": { "or": "ଅଳେଇଚ ଗୁଣ୍ଡ", "en": "Cardamom powder" }, "quantity": 0.5, "unit": "tsp", "scalable": true },
+      { "id": "ghee", "name": { "or": "ଘିଅ", "en": "Ghee for frying" }, "quantity": null, "unit": "as_required", "scalable": false }
+    ],
+    "instructions": [
+      { "step": 1, "text": { "or": "କ୍ଷୀରକୁ ଅଧା ହେବା ପର୍ଯ୍ୟନ୍ତ ଫୁଟାଇ ଚିନି ଓ ଅଳେଇଚ ମିଶାନ୍ତୁ।", "en": "Reduce the milk by half, then add sugar and cardamom." }, "image": null, "timer_seconds": null },
+      { "step": 2, "text": { "or": "ଛେନା ଓ ସୁଜିକୁ ମସୃଣ ହେବା ପର୍ଯ୍ୟନ୍ତ ଚକଟନ୍ତୁ।", "en": "Knead the chhena with semolina until smooth." }, "image": null, "timer_seconds": null },
+      { "step": 3, "text": { "or": "ଛୋଟ ଚେପଟା ଚକତି ତିଆରି କରି ଘିଅରେ ଲାଲ ହେବା ପର୍ଯ୍ୟନ୍ତ ଭାଜନ୍ତୁ।", "en": "Shape small flat discs and fry in ghee until reddish-brown." }, "image": null, "timer_seconds": null },
+      { "step": 4, "text": { "or": "ଭଜା ଚକତିକୁ ଗରମ କ୍ଷୀରରେ ଅତି କମରେ ଏକ ଘଣ୍ଟା ବୁଡ଼ାଇ ରଖନ୍ତୁ।", "en": "Soak the fried discs in the warm milk for at least an hour." }, "image": null, "timer_seconds": 3600 }
+    ],
+    "tips": [],
+    "serving_suggestion": { "or": "ଥଣ୍ଡା କରି ପରଷନ୍ତୁ।", "en": "Serve chilled." },
+    "image": null,
+    "tags": ["festival", "sweets"],
+    "is_featured": false,
+    "is_published": true,
+    "is_verified": false,
+    "published_at": "2026-11-10"
+  }
+]
