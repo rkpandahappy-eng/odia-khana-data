@@ -1,0 +1,47 @@
+name: Validate content
+
+# Runs on every change. A red ✗ means a file is broken – fix it before the app
+# can pick it up (the app also refuses broken files and keeps the old recipes).
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Check JSON against the schemas
+        run: |
+          npx --yes ajv-cli@5.0.0 validate --spec=draft7 --all-errors \
+            -r schema/localized_text.schema.json \
+            -s schema/manifest.schema.json -d manifest.json
+          npx --yes ajv-cli@5.0.0 validate --spec=draft7 --all-errors \
+            -r schema/localized_text.schema.json \
+            -s schema/categories.schema.json -d data/categories.json
+          npx --yes ajv-cli@5.0.0 validate --spec=draft7 --all-errors \
+            -r schema/localized_text.schema.json \
+            -s schema/recipes.schema.json -d data/recipes.json
+          npx --yes ajv-cli@5.0.0 validate --spec=draft7 --all-errors \
+            -s schema/featured.schema.json -d data/featured.json
+      - name: Check ids are unique and references exist
+        run: |
+          node -e '
+            const fs = require("fs");
+            const cats = JSON.parse(fs.readFileSync("data/categories.json"));
+            const recs = JSON.parse(fs.readFileSync("data/recipes.json"));
+            const feat = JSON.parse(fs.readFileSync("data/featured.json"));
+            const fail = (m) => { console.error("✗ " + m); process.exitCode = 1; };
+            const dup = (xs) => xs.filter((x, i) => xs.indexOf(x) !== i);
+            dup(cats.map(c => c.id)).forEach(id => fail("duplicate category id " + id));
+            dup(recs.map(r => r.id)).forEach(id => fail("duplicate recipe id " + id));
+            const catIds = new Set(cats.map(c => c.id));
+            recs.forEach(r => { if (!catIds.has(r.category_id)) fail(r.id + ": unknown category_id " + r.category_id); });
+            const recIds = new Set(recs.map(r => r.id));
+            [feat.featured_recipe_id, feat.todays_special_id, ...(feat.popular_recipe_ids || [])]
+              .filter(Boolean).forEach(id => { if (!recIds.has(id)) fail("featured.json: unknown recipe " + id); });
+            if (!process.exitCode) console.log("✓ " + recs.length + " recipes, " + cats.length + " categories OK");
+          '
