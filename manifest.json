@@ -1,9 +1,11 @@
 {
-  "content_version": 2,
+  "content_version": 4,
   "minimum_app_version": "1.0.0",
-  "last_updated": "2026-11-13",
+  "last_updated": "2026-11-14",
   "categories_version": 2,
-  "recipes_version": 2,
+  "recipes_version": 3,
   "featured_version": 1,
-  "image_base_url": ""
+  "image_base_url": "",
+  "advertisements_version": 1,
+  "app_config_version": 1
 }

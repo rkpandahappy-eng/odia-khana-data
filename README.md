@@ -13,7 +13,9 @@ repository, so you can add or fix recipes **without publishing a new app version
 | `data/categories.json` | Recipe categories. |
 | `data/recipes.json` | All recipes (Odia + English). |
 | `data/featured.json` | What Home highlights: featured recipe, Today's Special, Popular. |
-| `images/recipes/`, `images/categories/` | Food photos (`.webp`, ~1200 px wide, under ~200 KB). Only original or properly licensed photos. |
+| `data/advertisements.json` | The "Advertise Here" card on Home and optional sponsor cards on recipes. |
+| `data/app_config.json` | Contact email, share link and privacy-policy link shown in the app. |
+| `images/recipes/`, `images/categories/` | Photos for recipes added after the app release (`.webp`, ~1200 px wide, under ~200 KB). Only original or properly licensed photos. |
 | `schema/` | Rules each file must follow (checked automatically). |
 
 ## How to update recipes (from the GitHub website)
@@ -42,10 +44,27 @@ Copy an existing recipe block in `data/recipes.json` and change it. Important ru
 
 ### Photos
 
+The photos of all current recipes are **built into the app**, so they show offline and are not
+downloaded from here. Only photos for recipes added later need to be uploaded:
+
 Upload to `images/recipes/` and set `"image": "images/recipes/<file>.webp"` in the recipe.
-Images load from this repository unless `manifest.json → image_base_url` points elsewhere (must be `https://`).
+New photos load from this repository unless `manifest.json → image_base_url` points elsewhere (must be `https://`).
+To replace a photo that is built into the app, upload it under a **new file name** and change
+`"image"` – a photo uploaded under the old name will not show until the next app release.
 
 ## The app also ships with this data
 
 The same files are bundled inside the app (`assets/data/`) so it works offline on first launch.
 When you release a new app version, copy the latest `manifest.json` and `data/*.json` into it.
+
+### Advertising
+
+`data/advertisements.json` controls promotional cards. The default card invites businesses to
+advertise (it emails the contact address). For a real sponsor:
+
+- set `"is_sponsored": true` (the app then shows a **Sponsored** label, as required),
+- choose `"placement": "home_card"` (Home) or `"recipe"` with a `"recipe_id"`,
+- set an `"action"`: `url` (must start with `https://`), `email`, `phone` or `whatsapp`,
+- optionally limit dates with `"starts_on"` / `"ends_on"` (`YYYY-MM-DD`), or switch off with `"is_active": false`.
+
+Ads never appear inside cooking steps or as pop-ups.
