@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "app_config.schema.json",
+  "title": "data/app_config.json – links shown in the app",
+  "type": "object",
+  "properties": {
+    "contact_email": { "type": ["string", "null"], "description": "Shown publicly under Profile → Contact us" },
+    "share_url": { "type": ["string", "null"], "pattern": "^https://", "description": "Link sent when someone shares the app" },
+    "privacy_policy_url": { "type": ["string", "null"], "pattern": "^https://", "description": "Public web copy of the privacy policy" }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "advertisements.schema.json",
+  "title": "data/advertisements.json – promotional cards",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "placement", "title", "description"],
+    "properties": {
+      "id": { "type": "string", "pattern": "^[a-z0-9_]+$" },
+      "placement": { "enum": ["home_card", "recipe"], "description": "home_card = Home screen; recipe = on one recipe (needs recipe_id)" },
+      "recipe_id": { "type": "string" },
+      "is_active": { "type": "boolean" },
+      "is_sponsored": { "type": "boolean", "description": "true for a real paying sponsor: shows the 'Sponsored' label" },
+      "title": { "$ref": "localized_text.schema.json" },
+      "description": { "$ref": "localized_text.schema.json" },
+      "cta_label": { "$ref": "localized_text.schema.json" },
+      "image": { "type": ["string", "null"] },
+      "starts_on": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+      "ends_on": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+      "action": {
+        "type": "object",
+        "required": ["type", "value"],
+        "properties": {
+          "type": { "enum": ["url", "email", "phone", "whatsapp"] },
+          "value": { "type": "string", "minLength": 1, "description": "url must start with https://" },
+          "subject": { "type": "string" }
+        }
+      }
+    },
+    "if": { "properties": { "placement": { "const": "recipe" } } },
+    "then": { "required": ["recipe_id"] }
+  }
+}
