@@ -27,6 +27,11 @@ jobs:
             -s schema/recipes.schema.json -d data/recipes.json
           npx --yes ajv-cli@5.0.0 validate --spec=draft7 --all-errors \
             -s schema/featured.schema.json -d data/featured.json
+          npx --yes ajv-cli@5.0.0 validate --spec=draft7 --all-errors \
+            -r schema/localized_text.schema.json \
+            -s schema/advertisements.schema.json -d data/advertisements.json
+          npx --yes ajv-cli@5.0.0 validate --spec=draft7 --all-errors \
+            -s schema/app_config.schema.json -d data/app_config.json
       - name: Check ids are unique and references exist
         run: |
           node -e '
@@ -34,6 +39,7 @@ jobs:
             const cats = JSON.parse(fs.readFileSync("data/categories.json"));
             const recs = JSON.parse(fs.readFileSync("data/recipes.json"));
             const feat = JSON.parse(fs.readFileSync("data/featured.json"));
+            const ads = JSON.parse(fs.readFileSync("data/advertisements.json"));
             const fail = (m) => { console.error("✗ " + m); process.exitCode = 1; };
             const dup = (xs) => xs.filter((x, i) => xs.indexOf(x) !== i);
             dup(cats.map(c => c.id)).forEach(id => fail("duplicate category id " + id));
@@ -43,5 +49,10 @@ jobs:
             const recIds = new Set(recs.map(r => r.id));
             [feat.featured_recipe_id, feat.todays_special_id, ...(feat.popular_recipe_ids || [])]
               .filter(Boolean).forEach(id => { if (!recIds.has(id)) fail("featured.json: unknown recipe " + id); });
-            if (!process.exitCode) console.log("✓ " + recs.length + " recipes, " + cats.length + " categories OK");
+            dup(ads.map(a => a.id)).forEach(id => fail("duplicate advertisement id " + id));
+            ads.filter(a => a.placement === "recipe" && !recIds.has(a.recipe_id))
+              .forEach(a => fail("advertisement " + a.id + ": unknown recipe " + a.recipe_id));
+            ads.filter(a => a.action && a.action.type === "url" && !a.action.value.startsWith("https://"))
+              .forEach(a => fail("advertisement " + a.id + ": url must start with https://"));
+            if (!process.exitCode) console.log("✓ " + recs.length + " recipes, " + cats.length + " categories, " + ads.length + " ads OK");
           '
