@@ -1,0 +1,20 @@
+[
+  {
+    "id": "advertise_here",
+    "placement": "home_card",
+    "is_active": true,
+    "is_sponsored": false,
+    "title": { "or": "ଏଠାରେ ବିଜ୍ଞାପନ ଦିଅନ୍ତୁ", "en": "Advertise Here" },
+    "description": {
+      "or": "ଓଡ଼ିଆ ଖାଦ୍ୟପ୍ରେମୀଙ୍କ ପାଖରେ ଆପଣଙ୍କ ବ୍ରାଣ୍ଡ ପହଞ୍ଚାନ୍ତୁ।",
+      "en": "Promote your brand to Odia food lovers."
+    },
+    "cta_label": { "or": "ଯୋଗାଯୋଗ କରନ୍ତୁ", "en": "Contact us" },
+    "image": null,
+    "action": {
+      "type": "email",
+      "value": "oditechnoapps@gmail.com",
+      "subject": "Advertising on Odia Khana"
+    }
+  }
+]
