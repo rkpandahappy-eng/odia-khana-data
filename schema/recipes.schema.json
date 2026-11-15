@@ -34,7 +34,19 @@
         "is_featured": { "type": "boolean" },
         "is_published": { "type": "boolean" },
         "is_verified": { "type": "boolean", "description": "true only after quantities and steps were checked" },
-        "published_at": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}" }
+        "published_at": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}" },
+        "video": { "$ref": "#/definitions/video" }
+      }
+    },
+    "video": {
+      "type": "object",
+      "description": "Making video on YouTube (a Short or a normal video), played inside the app",
+      "required": ["youtube_id", "credit"],
+      "additionalProperties": false,
+      "properties": {
+        "youtube_id": { "type": "string", "pattern": "^[A-Za-z0-9_-]{11}$", "description": "The id from youtube.com/shorts/ID or watch?v=ID" },
+        "credit": { "type": "string", "minLength": 1, "maxLength": 80, "description": "Channel that made the video, shown as Video by ..." },
+        "title": { "type": "string" }
       }
     },
     "ingredient": {
