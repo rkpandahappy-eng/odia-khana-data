@@ -4,7 +4,7 @@ This is the same policy shown inside the app (Profile → Privacy Policy).
 
 ## English
 
-*Last updated: 13 November 2026*
+*Last updated: 15 November 2026*
 
 ### Summary
 
@@ -18,13 +18,17 @@ Favourites, collections, your shopping list, recent searches, recently viewed re
 
 The app downloads new recipes and food photos from our public content repository on GitHub. Like any website, GitHub can see your device's IP address when files are downloaded. No other information is sent.
 
+### Recipe videos
+
+Some recipes have a making video on YouTube; the creator is credited on the recipe. Nothing is loaded from YouTube until you tap “Watch how it’s made”. The video then plays in YouTube’s own player in privacy-enhanced mode (youtube-nocookie.com). While it plays, Google/YouTube receives your IP address and may show its own ads, as described in Google’s Privacy Policy (policies.google.com/privacy). The app sends nothing else to YouTube.
+
 ### Notifications
 
 Cooking-timer alerts are created on your phone. You can turn them off in Profile or in your phone's settings.
 
 ### Advertising
 
-Promotional cards are simple links chosen by us. The app uses no ad networks, analytics or tracking. If this ever changes, this policy will be updated before it happens.
+Promotional cards are simple links chosen by us. The app itself uses no ad networks, analytics or tracking (YouTube videos are covered under “Recipe videos”). If this ever changes, this policy will be updated before it happens.
 
 ### Children
 
@@ -49,6 +53,10 @@ Questions about this policy: oditechnoapps@gmail.com
 ### ଇଣ୍ଟରନେଟ୍ ବ୍ୟବହାର
 
 ଆପ୍ ଆମର GitHub ରେ ଥିବା ସାର୍ବଜନୀନ ତଥ୍ୟ ଭଣ୍ଡାରରୁ ନୂଆ ରେସିପି ଓ ଖାଦ୍ୟର ଛବି ଡାଉନଲୋଡ୍ କରେ। ଯେକୌଣସି ୱେବସାଇଟ୍ ପରି, ଫାଇଲ୍ ଡାଉନଲୋଡ୍ ସମୟରେ GitHub ଆପଣଙ୍କ ଡିଭାଇସ୍‌ର IP ଠିକଣା ଦେଖିପାରେ। ଅନ୍ୟ କୌଣସି ତଥ୍ୟ ପଠାଯାଏ ନାହିଁ।
+
+### ରେସିପି ଭିଡିଓ
+
+କିଛି ରେସିପିରେ YouTubeରେ ରାନ୍ଧିବା ଭିଡିଓ ଅଛି; ନିର୍ମାତାଙ୍କ ନାମ ରେସିପିରେ ଦିଆଯାଇଛି। “ରାନ୍ଧିବା ଭିଡିଓ ଦେଖନ୍ତୁ” ଟାପ୍ ନକଲା ପର୍ଯ୍ୟନ୍ତ YouTubeରୁ କିଛି ଲୋଡ୍ ହୁଏ ନାହିଁ। ତାପରେ ଭିଡିଓ YouTubeର ନିଜ ପ୍ଲେୟରରେ ଗୋପନୀୟତା-ସୁରକ୍ଷିତ ମୋଡ୍‌ରେ (youtube-nocookie.com) ଚାଲେ। ଭିଡିଓ ଚାଲୁଥିବା ସମୟରେ Google/YouTube ଆପଣଙ୍କ IP ଠିକଣା ପାଏ ଏବଂ ନିଜର ବିଜ୍ଞାପନ ଦେଖାଇପାରେ, ଯାହା Googleର ଗୋପନୀୟତା ନୀତିରେ (policies.google.com/privacy) ଲେଖା ଅଛି। ଆପ୍ YouTubeକୁ ଅନ୍ୟ କୌଣସି ତଥ୍ୟ ପଠାଏ ନାହିଁ।
 
 ### ବିଜ୍ଞପ୍ତି
 

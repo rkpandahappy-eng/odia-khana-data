@@ -52,6 +52,21 @@ New photos load from this repository unless `manifest.json → image_base_url` p
 To replace a photo that is built into the app, upload it under a **new file name** and change
 `"image"` – a photo uploaded under the old name will not show until the next app release.
 
+### Making videos (YouTube)
+
+A recipe can have a making video – a YouTube Short or a normal video – that plays inside the app.
+Add a `video` block to the recipe:
+
+```json
+"video": { "youtube_id": "fafschX7Fx0", "credit": "A Foodie's Dhaba" }
+```
+
+- `youtube_id` is the 11 characters after `youtube.com/shorts/` (or after `watch?v=`).
+- `credit` is the channel name; the app shows "Video by …".
+- Only use videos whose owner allows embedding (if `https://www.youtube.com/oembed?url=https://www.youtube.com/shorts/<id>` shows an error, it can't be embedded).
+- Watch it first: the dish and steps should match this recipe.
+- Never download or re-upload someone else's video – the app only plays it with YouTube's own player.
+
 ## The app also ships with this data
 
 The same files are bundled inside the app (`assets/data/`) so it works offline on first launch.
