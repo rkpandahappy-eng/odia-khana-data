@@ -866,9 +866,10 @@ async function start() {
   } catch (e) {
     if (e.code === 'not_signed_in' && e.auth === 'password') return passwordView(!!password);
     const msg = {
-      not_signed_in: e.auth === 'not_configured'
-        ? 'The admin panel is not switched on yet (sign-in is not set up in Cloudflare).'
-        : 'You are not allowed to use the admin panel.',
+      not_signed_in: {
+        not_configured: 'The admin panel is not switched on yet (sign-in is not set up in Cloudflare).',
+        weak_password: 'The admin password in Cloudflare is too short. Use at least 12 characters.',
+      }[e.auth] || 'You are not allowed to use the admin panel.',
       signed_out: 'Your sign-in has expired. Reload the page.',
       github_token_missing: 'The GitHub key is not set up yet in Cloudflare.',
       github_refused: 'GitHub refused – the GitHub key may be wrong or expired.',
