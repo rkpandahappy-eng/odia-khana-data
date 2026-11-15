@@ -690,7 +690,9 @@ function homeView() {
   drawSpecial();
   drawPopular();
   $('#save').addEventListener('click', () => {
-    withSaving($('#save'), $('#errs'), () => publish('Update Home: Today’s Special and Popular', () => ({ featured: f })));
+    // A copy, so later edits on this screen are not mistaken for saved ones.
+    withSaving($('#save'), $('#errs'), () =>
+      publish('Update Home: Today’s Special and Popular', () => ({ featured: structuredClone(f) })));
   });
 }
 
