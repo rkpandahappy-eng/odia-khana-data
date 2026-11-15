@@ -17,16 +17,37 @@ repository, so you can add or fix recipes **without publishing a new app version
 | `data/app_config.json` | Contact email, share link and privacy-policy link shown in the app. |
 | `images/recipes/`, `images/categories/` | Photos for recipes added after the app release (`.webp`, ~1200 px wide, under ~200 KB). Only original or properly licensed photos. |
 | `schema/` | Rules each file must follow (checked automatically). |
+| `admin/`, `functions/` | The admin panel and its save service (see below). |
+| `index.html` | Status page at https://odia-khana-data.pages.dev/ |
+
+## Easiest: the admin panel
+
+Open **https://odia-khana-data.pages.dev/admin/**, sign in with the code Cloudflare
+emails you, and add or edit recipes, photos, videos, Today's Special, Popular,
+ads and contact links. **Publish** checks for mistakes, raises the version numbers
+and saves here automatically; phones get it within a few minutes. Every change is
+kept in this repository's history, so any change can be undone.
+
+The panel can only change `manifest.json`, `data/*.json` and photos in `images/`.
+It saves with a GitHub key stored as a Cloudflare secret (never in this repository).
 
 ## How to update recipes (from the GitHub website)
 
 1. Open the file (for example `data/recipes.json`), click the ✏️ pencil, make your change.
 2. Open `manifest.json` and **increase `content_version` by 1** (for example `1` → `2`).
    Also update `last_updated`. *If you skip this step, phones will not download your change.*
+   *Optional, saves data:* also raise the changed file's own number (e.g. `recipes_version` when you
+   edited `data/recipes.json`). Then phones download only that file. If you only raise
+   `content_version`, phones download every file – that always works.
 3. Click **Commit changes**.
 4. Open the **Actions** tab. A green ✓ means the files are valid. A red ✗ shows what to fix.
-5. Phones pick up the change the next time the app checks (at most every 6 hours,
-   or immediately with **Profile → Check for recipe updates**).
+5. Phones pick up the change when the app is opened or brought back to the screen (checked at most
+   every 30 minutes), or right away when the user pulls Home down or taps
+   **Profile → Check for recipe updates**.
+6. Phones download from **Cloudflare Pages** (`odia-khana-data.pages.dev`), which copies this
+   repository automatically about 1 minute after every commit (see the green tick on the commit).
+   If Cloudflare is down, the app uses GitHub directly, then the jsDelivr copy. Photos in
+   `images/` use the same order. Nothing to do on Cloudflare or jsDelivr – edit only here.
 
 If a file is broken, the app **ignores the update and keeps the recipes it already has**.
 
