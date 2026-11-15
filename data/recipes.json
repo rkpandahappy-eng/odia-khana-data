@@ -233,7 +233,12 @@
     "is_featured": true,
     "is_published": true,
     "is_verified": false,
-    "published_at": "2026-11-01"
+    "published_at": "2026-11-01",
+    "video": {
+      "youtube_id": "t_BWecDzfFM",
+      "credit": "Odia Dolly's Kitchen",
+      "title": "Odia Dalma Recipe"
+    }
   },
   {
     "id": "odia_santula_001",
