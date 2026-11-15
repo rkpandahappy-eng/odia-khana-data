@@ -78,9 +78,14 @@ function json(body, status = 200) {
 
 // ---------------------------------------------------------------- sign-in
 
+const MIN_PASSWORD = 12;
+
 export function authMode(env) {
   if (env.ACCESS_TEAM_DOMAIN && env.ACCESS_AUD) return 'access';
-  if (env.ADMIN_PASSWORD) return 'password';
+  if (env.ADMIN_PASSWORD) {
+    // A short password could be guessed: refuse to run with one.
+    return String(env.ADMIN_PASSWORD).length >= MIN_PASSWORD ? 'password' : 'weak_password';
+  }
   return 'not_configured';
 }
 
@@ -103,7 +108,9 @@ export async function authenticate(request, env, fetchImpl = fetch) {
   }
   if (mode === 'password') {
     const given = request.headers.get('x-admin-password') || '';
-    return (await sameSecret(given, env.ADMIN_PASSWORD)) ? { email: 'admin' } : null;
+    if (await sameSecret(given, env.ADMIN_PASSWORD)) return { email: 'admin' };
+    if (given) await new Promise((r) => setTimeout(r, 1000)); // slow down guessing
+    return null;
   }
   return null; // nothing configured: closed to everyone
 }
