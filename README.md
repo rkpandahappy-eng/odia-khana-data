@@ -22,8 +22,8 @@ repository, so you can add or fix recipes **without publishing a new app version
 
 ## Easiest: the admin panel
 
-Open **https://odia-khana-data.pages.dev/admin/**, sign in with the code Cloudflare
-emails you, and add or edit recipes, photos, videos, Today's Special, Popular,
+Open **https://odia-khana-data.pages.dev/admin/**, sign in with your admin password
+(kept as a Cloudflare secret, at least 12 characters), and add or edit recipes, photos, videos, Today's Special, Popular,
 ads and contact links. **Publish** checks for mistakes, raises the version numbers
 and saves here automatically; phones get it within a few minutes. Every change is
 kept in this repository's history, so any change can be undone.
